@@ -1,0 +1,37 @@
+ffmpeg version N-99847-gcfdddec0c8 Copyright (c) 2000-2020 the FFmpeg developers
+  built with Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+  configuration: --samples=fate-suite/
+  libavutil      56. 60.100 / 56. 60.100
+  libavcodec     58.112.101 / 58.112.101
+  libavformat    58. 64.100 / 58. 64.100
+  libavdevice    58. 11.102 / 58. 11.102
+  libavfilter     7. 88.102 /  7. 88.102
+  libswscale      5.  8.100 /  5.  8.100
+  libswresample   3.  8.100 /  3.  8.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'BBB.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 1
+    compatible_brands: isomavc1
+    creation_time   : 2013-12-16T17:59:32.000000Z
+    title           : Big Buck Bunny, Sunflower version
+    artist          : Blender Foundation 2008, Janus Bager Kristensen 2013
+    comment         : Creative Commons Attribution 3.0 - http://bbb3d.renderfarming.net
+    genre           : Animation
+    composer        : Sacha Goedegebure
+  Duration: 00:10:34.53, start: 0.000000, bitrate: 4486 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 4001 kb/s, 60 fps, 60 tbr, 60k tbn, 120 tbc (default)
+    Metadata:
+      creation_time   : 2013-12-16T17:59:32.000000Z
+      handler_name    : GPAC ISO Video Handler
+    Stream #0:1(und): Audio: mp3 (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 160 kb/s (default)
+    Metadata:
+      creation_time   : 2013-12-16T17:59:37.000000Z
+      handler_name    : GPAC ISO Audio Handler
+    Stream #0:2(und): Audio: ac3 (ac-3 / 0x332D6361), 48000 Hz, 5.1(side), fltp, 320 kb/s (default)
+    Metadata:
+      creation_time   : 2013-12-16T17:59:37.000000Z
+      handler_name    : GPAC ISO Audio Handler
+    Side data:
+      audio service type: main
+At least one output file must be specified
