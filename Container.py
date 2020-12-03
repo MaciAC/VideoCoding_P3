@@ -42,7 +42,7 @@ class Container_manager:
         os.system("ffmpeg -i {} -ss 00:00:00 -t 00:01:00 -map 0:v:0 -c:v copy {}".format(self.filename, self.video_filename))
 
     def transcode2mpg(self):
-        os.system("ffmpeg -i {} -ss 00:00:00 -t 00:01:00 {}".format(self.filename, self.mpg_filename))
+        os.system("ffmpeg -i {} -ss 00:00:00 -t 00:00:10 {}".format(self.filename, self.mpg_filename))
 
     def transcode2aac(self):
         os.system("ffmpeg -i {} -ss 00:00:00 -t 00:01:00 -c:v copy -ac 1 -c:a aac {}".format(self.filename, self.aac_filename))
@@ -101,12 +101,12 @@ class Container_manager:
 
 def test_compatibility_check():
     Container_mngr = Container_manager("BBB.mp4")
-    #Container_mngr.export_audio_mono()
-    #Container_mngr.export_audio_lowrate()
-    #Container_mngr.export_video()
-    #Container_mngr.transcode2aac()
-    #Container_mngr.transcode2mpg()
-    #Container_mngr.create_new_container()
+    Container_mngr.export_audio_mono()
+    Container_mngr.export_audio_lowrate()
+    Container_mngr.export_video()
+    Container_mngr.transcode2aac()
+    Container_mngr.transcode2mpg()
+    Container_mngr.create_new_container()
 
     Container_mngr.check_broadcast_compatibility(Container_mngr.filename)
     Container_mngr.check_broadcast_compatibility(Container_mngr.aac_filename)
