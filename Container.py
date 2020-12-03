@@ -100,7 +100,7 @@ class Container_manager:
 
 
 def test_compatibility_check():
-    Container_mngr = Container_manager("BBB.mp4")
+    Container_mngr = Container_manager("BBB_curt.mp4")
     Container_mngr.export_audio_mono()
     Container_mngr.export_audio_lowrate()
     Container_mngr.export_video()
